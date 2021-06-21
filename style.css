@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url("./assets/sky.jpg"),
+    linear-gradient(192.05deg, #385d85 0%, #4a91ff 100%);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+.header-logo {
+  font-size: 2.5rem;
+}
+.header-toggle-button {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.toggle-line {
+  width: 30px;
+  height: 4px;
+  margin: 2px 0;
+  background-color: #fff;
+}
+.header-navigations {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  font-size: 1rem;
+}
+.header-navigations-sub {
+  padding: 0 10px;
+}
+.header-navigations-sub a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+/* main body */
+
+.main-body {
+  margin: 30px 20%;
+}
+.display-picture {
+  text-align: center;
+}
+.display-picture img {
+  width: 30%;
+  height: 30%;
+}
+.display-picture p {
+  font-size: 2.3rem;
+  color: white;
+  margin: 20px 0 10px 0;
+}
+.display-picture span {
+  color: #ff9142;
+  font-weight: 600;
+}
+.display-picture i {
+  color: white;
+  font-size: 24px;
+}
+.typing-field {
+  margin: 5% 20% 5% 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.typing-field input {
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  position: relative;
+  border-color: black;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.typing-field span {
+  color: #ff9142;
+  position: absolute;
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* price */
+
+.price-field {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 600;
+}
+
+.price-field h1 {
+  color: #0355d6;
+  font-size: 4rem;
+  margin: 0;
+}
+.price-field p {
+  color: white;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+/* code */
+
+.display-code {
+  margin: 5px 20% 40px 20%;
+  text-align: center;
+}
+.display-code .code {
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 15px;
+}
+.display-code a {
+  text-decoration: none;
+  border: 1px solid #0355d6;
+  border-radius: 20px;
+  background-color: #0355d6;
+  color: #fff;
+  padding: 2% 4%;
+  font-size: 0.8rem;
+}
+/* footer */
+
+.footer {
+  padding: 20px 4% 0 4%;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+}
+
+.volcano-logo-section img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.watch-video-section i {
+  color: white;
+  font-size: 80px;
+}
+.watch-video-section {
+  text-align: center;
+}
+
+.app-store-section {
+  margin-left: -6%;
+  text-align: center;
+}
+.store-icons i {
+  font-size: 80px;
+  padding: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    height: 180px;
+  }
+  .header-logo {
+    font-size: 2.5rem;
+  }
+  .header-navigations {
+    font-size: 1rem;
+  }
+  .main-body {
+    margin: 50px 10%;
+  }
+  .display-picture p {
+    font-size: 2.5rem;
+  }
+  .display-picture i {
+    font-size: 20px;
+  }
+  .price-field h1 {
+    font-size: 4rem;
+  }
+  .price-field p {
+    font-size: 0.9rem;
+  }
+  .display-code {
+    margin: 60px 20% 20px 20%;
+    text-align: center;
+  }
+  .display-code .code {
+    font-size: 0.7rem;
+  }
+  .display-code a {
+    font-size: 0.7rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    margin-top: 100px;
+  }
+  .store-icons i {
+    font-size: 60px;
+  }
+  .watch-video-section i {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 100px;
+  }
+  .header-logo {
+    font-size: 2.2rem;
+  }
+  .main-body {
+    margin: 10px 10%;
+  }
+  .display-picture p {
+    font-size: 2.2rem;
+  }
+  .price-field h1 {
+    font-size: 3.5rem;
+  }
+  .price-field p {
+    font-size: 0.8rem;
+  }
+  .display-code {
+    margin: 10px 10% 20px 10%;
+    text-align: center;
+  }
+  .display-code .code {
+    font-size: 0.6rem;
+  }
+  .display-code a {
+    font-size: 0.6rem;
+  }
+  .footer {
+    font-size: 0.7rem;
+    margin-top: 60px;
+  }
+  .store-icons i {
+    font-size: 50px;
+  }
+  .watch-video-section i {
+    font-size: 60px;
+  }
+  .volcano-logo-section img {
+    width: 40px;
+  }
+  .app-store-section {
+    margin-left: -9%;
+  }
+  .typing-field input {
+    font-size: 0.7rem;
+  }
+  .typing-field span {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-logo {
+    font-size: 1.8rem;
+  }
+  .display-picture p {
+    font-size: 1.6rem;
+  }
+  .price-field h1 {
+    font-size: 2.4rem;
+  }
+  .typing-field input {
+    font-size: 0.5rem;
+  }
+  .typing-field span {
+    font-size: 0.6rem;
+  }
+  .footer {
+    font-size: 0.5rem;
+    margin-top: 30px;
+  }
+  .watch-video-section i {
+    font-size: 40px;
+  }
+  .volcano-logo-section img {
+    width: 30px;
+  }
+  .store-icons i {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 60px;
+  }
+  .header-logo {
+    font-size: 1.2rem;
+  }
+
+  .header-navigations {
+    font-size: 0.7rem;
+  }
+  .main-body {
+    margin: 5px 10%;
+  }
+  .display-picture p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .display-picture i {
+    font-size: 14px;
+  }
+  .price-field h1 {
+    font-size: 1.6rem;
+  }
+  .price-field p {
+    font-size: 0.5rem;
+  }
+  .display-code {
+    margin: 10px 20% 20px 20%;
+    text-align: center;
+  }
+  .display-code .code {
+    font-size: 0.4rem;
+    margin: 10px auto;
+  }
+  .display-code a {
+    font-size: 0.4rem;
+  }
+
+  .footer {
+    font-size: 0.4rem;
+    margin-top: 0;
+  }
+  .store-icons i {
+    font-size: 20px;
+  }
+  .watch-video-section i {
+    font-size: 30px;
+  }
+  .volcano-logo-section img {
+    width: 25px;
+  }
+  .typing-field input {
+    height: 20px;
+    font-size: 0.4rem;
+  }
+  .typing-field span {
+    font-size: 0.4rem;
+  }
+  .toggle-line {
+    width: 20px;
+    height: 3px;
+    margin: 1.5px 0;
+  }
+}
