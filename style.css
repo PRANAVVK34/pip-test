@@ -1,52 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url("./assets/sky.jpg"),
+  background: url("./assets/bg-image.svg"),
     linear-gradient(192.05deg, #385d85 0%, #4a91ff 100%);
 
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   background-attachment: fixed;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
 .header {
-  height: 100px;
   color: white;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  padding: 0 4%;
+  margin: 26px 41px 0 41px;
 }
 .header-logo {
-  font-size: 2.5rem;
+  width: 61px;
+  height: 45px;
 }
 .header-toggle-button {
-  display: flex;
-  flex-direction: column;
+  width: 36px;
+  height: 22px;
   cursor: pointer;
 }
-.toggle-line {
-  width: 30px;
-  height: 4px;
-  margin: 2px 0;
-  background-color: #fff;
-}
+
 .header-navigations {
   display: flex;
   padding: 0;
   align-items: center;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
+  font-weight: 400;
+  line-height: 18px;
 }
+
 .header-navigations-sub {
   padding: 0 10px;
 }
+
 .header-navigations-sub a {
   padding: 0 10px;
   text-decoration: none;
@@ -55,43 +55,78 @@ body {
 /* main body */
 
 .main-body {
-  margin: 30px 20%;
+  margin: 20px 20%;
 }
 .display-picture {
   text-align: center;
 }
-.display-picture img {
-  width: 30%;
-  height: 30%;
+
+.display-picture .cat-image {
+  position: relative;
+  transform: translate(5%);
+  width: 301px;
+  height: 204px;
+  z-index: 5;
+}
+.display-picture .white-bg {
+  position: absolute;
+  width: 209px;
+  height: 194px;
+  left: 50%;
+  top: 192px;
+
+  transform: translate(-50%, -50%);
+
+  /* box-shadow: inset -37.4492px 22.8857px 62.4154px #ffffff,
+    inset 16.6441px -31.2077px 62.4154px rgba(0, 0, 0, 0.2); */
+  z-index: -1;
 }
 .display-picture p {
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   color: white;
-  margin: 20px 0 10px 0;
+  margin: 0;
 }
 .display-picture span {
   color: #ff9142;
   font-weight: 600;
 }
-.display-picture i {
-  color: white;
-  font-size: 24px;
+.display-picture .dots-3 {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  width: 12px;
+  height: 13px;
+  background: rgba(39, 101, 135, 0.6);
+  border: 0.8px solid rgba(255, 255, 255, 0.49);
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+.dot:first-child {
+  background: #9cd0fa;
+  border: 0.8px solid rgba(255, 255, 255, 0.49);
 }
 .typing-field {
-  margin: 5% 20% 5% 20%;
+  margin: 2% 20% 2% 20%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 .typing-field input {
-  width: 100%;
-  height: 35px;
-  border-radius: 20px;
+  /* width: 100%;
+  height: 25px; */
+  width: 600px;
+  height: 48px;
+  border-radius: 30px;
+  font-weight: 500;
   position: relative;
   border-color: black;
   outline: none;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .typing-field span {
@@ -115,19 +150,19 @@ body {
 
 .price-field h1 {
   color: #0355d6;
-  font-size: 4rem;
+  font-size: 2.2rem;
   margin: 0;
 }
 .price-field p {
   color: white;
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-top: 0;
 }
 
 /* code */
 
 .display-code {
-  margin: 5px 20% 40px 20%;
+  margin: 0px 20% 20px 20%;
   text-align: center;
 }
 .display-code .code {
@@ -136,10 +171,10 @@ body {
   background-color: black;
   color: white;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   border-radius: 20px;
-  margin: 30px auto;
-  padding: 15px;
+  margin: 5px auto 15px auto;
+  padding: 10px;
 }
 .display-code a {
   text-decoration: none;
@@ -147,29 +182,29 @@ body {
   border-radius: 20px;
   background-color: #0355d6;
   color: #fff;
-  padding: 2% 4%;
-  font-size: 0.8rem;
+  padding: 1% 4%;
+  font-size: 0.7rem;
 }
 /* footer */
 
 .footer {
-  padding: 20px 4% 0 4%;
+  padding: 10px 4% 0 4%;
   display: flex;
-  font-size: 1rem;
+  font-size: 0.8rem;
   justify-content: space-between;
   align-items: flex-end;
   color: white;
 }
 
 .volcano-logo-section img {
-  width: 50px;
+  width: 40px;
   height: auto;
   margin-bottom: 0;
 }
 
 .watch-video-section i {
   color: white;
-  font-size: 80px;
+  font-size: 60px;
 }
 .watch-video-section {
   text-align: center;
@@ -179,73 +214,186 @@ body {
   margin-left: -6%;
   text-align: center;
 }
-.store-icons i {
-  font-size: 80px;
-  padding: 10px;
+.store-icons img {
+  width: 110px;
+  height: 40px;
+  padding: 5px;
 }
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1200px) {
+  .typing-field {
+    margin: 2% 25% 2% 25%;
+  }
+  .typing-field input {
+    font-size: 0.6rem;
+  }
+  .typing-field span {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-height: 1365px) {
   .header {
     height: 180px;
+    align-items: center;
   }
   .header-logo {
-    font-size: 2.5rem;
+    width: 90px;
   }
   .header-navigations {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .main-body {
-    margin: 50px 10%;
+    margin: 40px 10%;
   }
   .display-picture p {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
-  .display-picture i {
-    font-size: 20px;
+  /* .display-picture image {
+    width: 210px;
+    height: 200px;
+  } */
+  .white-bg {
+    width: 150px;
+    height: 140px;
+    left: 50%;
+    top: 300px;
+
+    transform: translate(-50%, -50%);
+  }
+  .typing-field {
+    margin: 8% 20% 2% 20%;
+  }
+  .typing-field input {
+    font-size: 1rem;
+    height: 30px;
+  }
+  .typing-field span {
+    font-size: 1.1rem;
   }
   .price-field h1 {
-    font-size: 4rem;
+    font-size: 4.3rem;
+    margin-top: 20%;
+  }
+  .price-field p {
+    font-size: 1rem;
+  }
+  .display-code {
+    margin: 60px 20% 50px 20%;
+    text-align: center;
+  }
+  .display-code .code {
+    font-size: 0.9rem;
+    margin: 5px auto 35px auto;
+  }
+
+  .display-code a {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 1.1rem;
+    margin-top: 100px;
+  }
+  .app-store-section {
+    margin-left: -9%;
+  }
+  .store-icons img {
+    width: 167px;
+    height: 61px;
+  }
+  .watch-video-section i {
+    font-size: 70px;
+  }
+  .volcano-logo-section img {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .typing-field {
+    margin: 2% 22% 2% 22%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-height: 1024px) {
+  .header {
+    height: 120px;
+    align-items: center;
+  }
+  .header-logo {
+    width: 60px;
+  }
+  .main-body {
+    margin: 20px 10%;
+  }
+  .display-picture p {
+    font-size: 2rem;
+  }
+  .white-bg {
+    top: 230px;
+  }
+  .typing-field {
+    margin: 8% 20% 2% 20%;
+  }
+  .price-field h1 {
+    font-size: 3rem;
+    margin-top: 30px;
   }
   .price-field p {
     font-size: 0.9rem;
   }
   .display-code {
-    margin: 60px 20% 20px 20%;
+    margin: 30px 10% 30px 10%;
     text-align: center;
   }
   .display-code .code {
     font-size: 0.7rem;
   }
   .display-code a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
-
   .footer {
-    font-size: 0.9rem;
-    margin-top: 100px;
+    font-size: 0.8rem;
+    margin-top: 50px;
   }
-  .store-icons i {
+  /* .store-icons i {
+    font-size: 50px;
+  } */
+  .watch-video-section i {
     font-size: 60px;
   }
-  .watch-video-section i {
-    font-size: 70px;
+  .volcano-logo-section img {
+    width: 40px;
+  }
+  .app-store-section {
+    margin-left: -10%;
+  }
+  .typing-field input {
+    font-size: 0.8rem;
+    height: 30px;
+  }
+  .typing-field span {
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-height: 1023px) {
   .header {
-    height: 100px;
+    height: 50px;
+    align-items: flex-end;
   }
   .header-logo {
-    font-size: 2.2rem;
+    width: 50px;
   }
   .main-body {
     margin: 10px 10%;
   }
   .display-picture p {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
   }
   .price-field h1 {
-    font-size: 3.5rem;
+    font-size: 2.4rem;
   }
   .price-field p {
     font-size: 0.8rem;
@@ -262,7 +410,7 @@ body {
   }
   .footer {
     font-size: 0.7rem;
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .store-icons i {
     font-size: 50px;
@@ -285,13 +433,13 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .header-logo {
-    font-size: 1.8rem;
+    width: 50px;
   }
   .display-picture p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .price-field h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
   .typing-field input {
     font-size: 0.5rem;
@@ -300,8 +448,8 @@ body {
     font-size: 0.6rem;
   }
   .footer {
-    font-size: 0.5rem;
-    margin-top: 30px;
+    font-size: 0.7rem;
+    margin-top: 15px;
   }
   .watch-video-section i {
     font-size: 40px;
@@ -309,16 +457,62 @@ body {
   .volcano-logo-section img {
     width: 30px;
   }
-  .store-icons i {
-    font-size: 30px;
+}
+@media only screen and (max-width: 480px) and (max-height: 824px) {
+  .header-logo {
+    width: 40px;
+  }
+  .footer {
+    font-size: 0.5rem;
+    margin-top: 10px;
+  }
+  .store-icons img {
+    width: 80px;
+    height: 30px;
+  }
+  .main-body {
+    margin: 5px 10%;
+  }
+  .display-picture p {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .typing-field {
+    margin: 8% 12% 2% 12%;
+  }
+  .typing-field span {
+    font-size: 0.5rem;
+  }
+  .typing-field input {
+    height: 20px;
+    font-size: 0.5rem;
+  }
+  .display-picture .dots-3 {
+    margin-top: 5px;
+  }
+  .dot {
+    width: 6px;
+    height: 7px;
+  }
+  .price-field h1 {
+    font-size: 2.2rem;
+    margin-top: 20px;
+  }
+  .price-field p {
+    font-size: 0.6rem;
+  }
+  .display-code .code {
+    font-size: 0.4rem;
+    margin: 30px auto;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (max-height: 700px) {
   .header {
-    height: 60px;
+    height: 70px;
+    align-items: center;
   }
   .header-logo {
-    font-size: 1.2rem;
+    width: 40px;
   }
 
   .header-navigations {
@@ -331,21 +525,45 @@ body {
     font-size: 1.2rem;
     margin: 0;
   }
-  .display-picture i {
-    font-size: 14px;
+  .display-picture img {
+    width: 140px;
+    height: 130px;
+  }
+  .white-bg {
+    width: 110px;
+    height: 110px;
+    top: 140px;
+  }
+  .display-picture .dots-3 {
+    margin-top: 5px;
+  }
+  .dot {
+    width: 6px;
+    height: 7px;
+  }
+  .typing-field {
+    margin: 8% 10% 2% 10%;
+  }
+  .typing-field span {
+    font-size: 0.5rem;
+  }
+  .typing-field input {
+    height: 20px;
+    font-size: 0.5rem;
   }
   .price-field h1 {
     font-size: 1.6rem;
+    margin-top: 20px;
   }
   .price-field p {
     font-size: 0.5rem;
   }
   .display-code {
-    margin: 10px 20% 20px 20%;
+    margin: 20px 20% 20px 20%;
     text-align: center;
   }
   .display-code .code {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
     margin: 10px auto;
   }
   .display-code a {
@@ -354,10 +572,11 @@ body {
 
   .footer {
     font-size: 0.4rem;
-    margin-top: 0;
+    margin-top: 10px;
   }
-  .store-icons i {
-    font-size: 20px;
+  .store-icons img {
+    width: 70px;
+    height: 25px;
   }
   .watch-video-section i {
     font-size: 30px;
@@ -365,16 +584,69 @@ body {
   .volcano-logo-section img {
     width: 25px;
   }
-  .typing-field input {
-    height: 20px;
-    font-size: 0.4rem;
+
+  .toggle-line {
+    width: 20px;
+    height: 3px;
+    margin: 1.5px 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header {
+    height: 50px;
+    align-items: center;
+  }
+  .header-logo {
+    width: 35px;
+  }
+
+  .header-navigations {
+    font-size: 0.7rem;
+  }
+  .main-body {
+    margin: 3px 10%;
+  }
+  .display-picture p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .display-picture img {
+    width: 100px;
+    height: 90px;
+  }
+  .white-bg {
+    width: 75px;
+    height: 75px;
+    top: 100px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 5px;
+  }
+  .typing-field {
+    margin: 8% 12% 2% 12%;
   }
   .typing-field span {
     font-size: 0.4rem;
   }
+  .typing-field input {
+    font-size: 0.4rem;
+  }
+  .price-field h1 {
+    font-size: 1.4rem;
+  }
+  .price-field p {
+    font-size: 0.4rem;
+  }
+
+  .display-code .code {
+    font-size: 0.35rem;
+  }
+
   .toggle-line {
-    width: 20px;
-    height: 3px;
+    width: 15px;
+    height: 2.5px;
     margin: 1.5px 0;
   }
 }
