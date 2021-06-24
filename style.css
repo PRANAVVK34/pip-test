@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -187,7 +188,7 @@ body {
 .price-field p {
   color: #0355d6;
   font-size: 59.94px;
-  margin: 0;
+  margin: -15px;
 }
 .price-field small {
   color: white;
@@ -214,6 +215,7 @@ body {
   border-radius: 12px;
   margin: 5px auto 15px auto;
   padding: 10px;
+  font-family: "Roboto Mono", monospace;
 }
 .display-code a {
   text-decoration: none;
@@ -378,428 +380,708 @@ body {
   }
 }
 
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
+  .display-picture p {
+    width: 70%;
+    font-size: 35px;
+  }
   .typing-field {
-    margin: 2% 25% 2% 25%;
+    width: 50%;
   }
   .typing-field input {
-    font-size: 0.6rem;
+    font-size: 12px;
   }
   .typing-field span {
-    font-size: 0.6rem;
+    font-size: 13px;
+  }
+  .price-field {
+    width: 70%;
+  }
+  .app-store-section {
+    margin-left: -3%;
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-height: 1365px) {
+@media only screen and (min-width: 1024px) and (max-width: 1025px) and (min-height: 1366px) and (max-height: 1367px) {
   .header {
-    height: 180px;
     align-items: center;
   }
   .header-logo {
-    width: 90px;
+    width: 80px;
+    height: 60px;
   }
   .header-navigations {
-    font-size: 1.1rem;
+    font-size: 20px;
   }
-  .main-body {
-    margin: 40px 10%;
-  }
+
   .display-picture p {
-    font-size: 2.8rem;
+    font-size: 42px;
+    width: 80%;
+    top: 35%;
+  }
+  .header-navigations-sub {
+    padding: 0 30px;
+    opacity: 0.7;
   }
 
-  .white-bg {
-    width: 150px;
-    height: 140px;
-    left: 50%;
-    top: 300px;
-
-    transform: translate(-50%, -50%);
+  .header-navigations-sub a {
+    padding: 0 20px;
+  }
+  .display-picture .cat-image {
+    width: 410px;
+    height: 290px;
+  }
+  .display-picture .white-bg {
+    width: 350px;
+    height: 310px;
   }
   .typing-field {
-    margin: 8% 20% 2% 20%;
+    width: 65%;
   }
   .typing-field input {
-    font-size: 1rem;
-    height: 30px;
+    font-size: 18px;
+    height: 54px;
   }
   .typing-field span {
-    font-size: 1.1rem;
+    font-size: 18px;
   }
-  .price-field h1 {
-    font-size: 4.3rem;
-    margin-top: 20%;
+  .price-field {
+    bottom: 36%;
+    width: 90%;
   }
   .price-field p {
-    font-size: 1rem;
+    font-size: 64px;
   }
-  .display-code {
-    margin: 60px 20% 50px 20%;
-    text-align: center;
-  }
-  .display-code .code {
-    font-size: 0.9rem;
-    margin: 5px auto 35px auto;
+  .price-field small {
+    font-size: 18px;
   }
 
-  .display-code a {
-    font-size: 1rem;
+  .display-code {
+    bottom: 14%;
+  }
+
+  .display-code .code {
+    font-size: 14px;
   }
 
   .footer {
-    font-size: 1.1rem;
-    margin-top: 100px;
+    font-size: 26px;
   }
-  .app-store-section {
-    margin-left: -9%;
+  .app-store-section p {
+    opacity: 0.7;
   }
   .store-icons img {
     width: 167px;
     height: 61px;
   }
-  .watch-video-section i {
-    font-size: 70px;
+  .watch-video-section img {
+    width: 100px;
+    height: 86px;
   }
   .volcano-logo-section img {
-    width: 50px;
+    width: 60px;
+    height: 62px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 769px) and (min-height: 1024px) and (max-height: 1025px) {
+  .header {
+    align-items: center;
+    margin-top: 15px;
+  }
+  .header-logo {
+    width: 49.35px;
+    height: 36px;
+  }
+
+  .header-toggle-button {
+    width: 22px;
+    height: 13px;
+    margin-top: -10px;
+  }
+
+  .header-navigations-sub {
+    padding: 0 30px;
+    opacity: 0.7;
+  }
+
+  .header-navigations-sub a {
+    padding: 0 20px;
+  }
+  .display-picture .cat-image {
+    width: 308.92px;
+    height: 218.39px;
+  }
+  .display-picture .white-bg {
+    width: 256.73px;
+    height: 222.13px;
+  }
+  .display-picture p {
+    font-size: 30.3616px;
+    width: 80%;
+    top: 35%;
+  }
+  .dots-3 .dot {
+    display: none;
+  }
+  .typing-field {
+    width: 486px;
+  }
+  .typing-field input {
+    font-size: 11.34px;
+    height: 38.88px;
+  }
+  .typing-field span {
+    font-size: 13.7075px;
+  }
+  .price-field {
+    bottom: 36%;
+    width: 90%;
+  }
+  .price-field p {
+    font-size: 51.76px;
+  }
+  .price-field small {
+    font-size: 15.54px;
+  }
+
+  .display-code {
+    bottom: 14%;
+  }
+
+  .display-code .code {
+    font-size: 9px;
+    line-height: 11.87px;
+    font-weight: 400;
+    padding: 15px;
+  }
+  .display-code a {
+    font-size: 8.76px;
+    padding: 3px 8px;
+  }
+
+  .footer {
+    font-size: 26px;
+    bottom: 6px;
+  }
+  .app-store-section p {
+    opacity: 0.7;
+    font-weight: normal;
+    font-size: 11.8035px;
+    line-height: 20px;
+  }
+  .store-icons img {
+    width: 116.76px;
+    height: 42.79px;
+  }
+  .watch-video-section img {
+    width: 48px;
+    height: 48px;
+  }
+  .volcano-logo-section img {
+    width: 49.94px;
+    height: 52px;
+  }
+  .volcano-logo-section p {
+    display: none;
+  }
+  .watch-video-section p {
+    font-size: 7.91932px;
+    font-family: Roboto;
+    line-height: 9px;
+    margin-top: -15px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .typing-field {
-    margin: 2% 22% 2% 22%;
+  .display-picture p {
+    width: 80%;
   }
 }
 
-@media only screen and (max-width: 768px) and (min-height: 1024px) {
+@media only screen and (max-width: 768px) {
+  .doted-lines .line-1 {
+    width: 400px;
+    height: 300px;
+    left: 10%;
+    top: -54px;
+  }
   .header {
-    height: 120px;
     align-items: center;
-  }
-  .header-logo {
-    width: 60px;
-  }
-  .main-body {
-    margin: 20px 10%;
-  }
-  .display-picture p {
-    font-size: 2rem;
-  }
-  .white-bg {
-    top: 230px;
-  }
-  .typing-field {
-    margin: 8% 20% 2% 20%;
-  }
-  .price-field h1 {
-    font-size: 3rem;
-    margin-top: 30px;
-  }
-  .price-field p {
-    font-size: 0.9rem;
-  }
-  .display-code {
-    margin: 30px 10% 30px 10%;
-    text-align: center;
-  }
-  .display-code .code {
-    font-size: 0.7rem;
-  }
-  .display-code a {
-    font-size: 0.8rem;
-  }
-  .footer {
-    font-size: 0.8rem;
-    margin-top: 50px;
-  }
-
-  .watch-video-section i {
-    font-size: 60px;
-  }
-  .volcano-logo-section img {
-    width: 40px;
-  }
-  .app-store-section {
-    margin-left: -10%;
-  }
-  .typing-field input {
-    font-size: 0.8rem;
-    height: 30px;
-  }
-  .typing-field span {
-    font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 768px) and (max-height: 1023px) {
-  .header {
-    height: 50px;
-    align-items: flex-end;
-  }
-  .header-logo {
-    width: 50px;
-  }
-  .main-body {
-    margin: 10px 10%;
-  }
-  .display-picture p {
-    font-size: 1.4rem;
-  }
-  .price-field h1 {
-    font-size: 2.4rem;
-  }
-  .price-field p {
-    font-size: 0.8rem;
-  }
-  .display-code {
-    margin: 10px 10% 20px 10%;
-    text-align: center;
-  }
-  .display-code .code {
-    font-size: 0.6rem;
-  }
-  .display-code a {
-    font-size: 0.6rem;
-  }
-  .footer {
-    font-size: 0.7rem;
-    margin-top: 40px;
-  }
-  .store-icons i {
-    font-size: 50px;
-  }
-  .watch-video-section i {
-    font-size: 60px;
-  }
-  .volcano-logo-section img {
-    width: 40px;
-  }
-  .app-store-section {
-    margin-left: -9%;
-  }
-  .typing-field input {
-    font-size: 0.7rem;
-  }
-  .typing-field span {
-    font-size: 0.7rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .header-logo {
-    width: 50px;
-  }
-  .display-picture p {
-    font-size: 1.5rem;
-  }
-  .price-field h1 {
-    font-size: 2.2rem;
-  }
-  .typing-field input {
-    font-size: 0.5rem;
-  }
-  .typing-field span {
-    font-size: 0.6rem;
-  }
-  .footer {
-    font-size: 0.7rem;
     margin-top: 15px;
   }
-  .watch-video-section i {
+  .header-logo {
+    width: 55px;
+    height: 45px;
+  }
+
+  .header-toggle-button {
+    width: 22px;
+    height: 13px;
+    margin-top: -10px;
+  }
+
+  .header-navigations-sub {
+    padding: 0 30px;
+  }
+
+  .header-navigations-sub a {
+    padding: 0 20px;
+    opacity: 0.7;
+  }
+  .display-picture .cat-image {
+    width: 260px;
+    height: 170px;
+  }
+  .display-picture .white-bg {
+    width: 200px;
+    height: 170px;
+  }
+  .display-picture p {
+    font-size: 26px;
+    width: 80%;
+    top: 35%;
+  }
+
+  .typing-field {
+    width: 400px;
+  }
+  .typing-field input {
+    font-size: 11px;
+    height: 35px;
+  }
+  .typing-field span {
+    font-size: 13px;
+  }
+  .price-field {
+    bottom: 32%;
+    width: 80%;
+  }
+  .price-field p {
     font-size: 40px;
+  }
+  .price-field small {
+    font-size: 13px;
+  }
+
+  .display-code {
+    bottom: 12%;
+  }
+
+  .display-code .code {
+    font-size: 7px;
+    line-height: 11.87px;
+    font-weight: 400;
+    padding: 10px;
+  }
+  .display-code a {
+    font-size: 8.76px;
+    padding: 3px 8px;
+  }
+
+  .footer {
+    font-size: 12px;
+    bottom: 6px;
+    margin-bottom: 20px;
+  }
+  .app-store-section p {
+    opacity: 0.7;
+    font-weight: normal;
+    font-size: 11.8035px;
+    line-height: 20px;
+  }
+  .app-store-section {
+    margin-left: -55px;
+  }
+
+  .store-icons img {
+    width: 116px;
+    height: 40px;
+  }
+  .watch-video-section img {
+    width: 65px;
+    height: 65px;
+  }
+  .volcano-logo-section img {
+    width: 36px;
+    height: 40px;
+  }
+
+  .watch-video-section p {
+    font-size: 12px;
+
+    line-height: 9px;
+    margin-top: -12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-logo {
+    width: 48px;
+    height: 38px;
+  }
+  .display-picture .cat-image {
+    width: 230px;
+    height: 140px;
+  }
+  .display-picture .white-bg {
+    width: 170px;
+    height: 140px;
+  }
+  .display-picture p {
+    font-size: 22px;
+  }
+  .typing-field {
+    width: 65%;
+  }
+  .typing-field input {
+    height: 30px;
+    font-size: 10px;
+  }
+  .typing-field span {
+    font-size: 11px;
+  }
+  .price-field p {
+    font-size: 35px;
+  }
+  .price-field small {
+    font-size: 12px;
+  }
+  .display-code .code {
+    font-size: 6px;
+  }
+  .display-code a {
+    padding: 2px 6px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+  .app-store-section p {
+    font-size: 9px;
+  }
+
+  .store-icons img {
+    width: 90px;
+    height: 30px;
+  }
+  .watch-video-section img {
+    width: 45px;
+    height: 45px;
   }
   .volcano-logo-section img {
     width: 30px;
-  }
-}
-@media only screen and (max-width: 480px) and (max-height: 824px) {
-  .header-logo {
-    width: 40px;
-  }
-  .footer {
-    font-size: 0.5rem;
-    margin-top: 10px;
-  }
-  .store-icons img {
-    width: 80px;
     height: 30px;
   }
-  .main-body {
-    margin: 5px 10%;
-  }
-  .display-picture p {
-    font-size: 1.3rem;
-    margin: 0;
-  }
-  .typing-field {
-    margin: 8% 12% 2% 12%;
-  }
-  .typing-field span {
-    font-size: 0.5rem;
-  }
-  .typing-field input {
-    height: 20px;
-    font-size: 0.5rem;
-  }
-  .display-picture .dots-3 {
-    margin-top: 5px;
-  }
-  .dot {
-    width: 6px;
-    height: 7px;
-  }
-  .price-field h1 {
-    font-size: 2.2rem;
-    margin-top: 20px;
-  }
-  .price-field p {
-    font-size: 0.6rem;
-  }
-  .display-code .code {
-    font-size: 0.4rem;
-    margin: 30px auto;
-  }
-}
-@media only screen and (max-width: 480px) and (max-height: 700px) {
-  .header {
-    height: 70px;
-    align-items: center;
-  }
-  .header-logo {
-    width: 40px;
+  .volcano-logo-section p {
+    font-size: 9px;
+    line-height: 13px;
   }
 
-  .header-navigations {
-    font-size: 0.7rem;
+  .watch-video-section p {
+    font-size: 10px;
+
+    margin-top: -10px;
   }
-  .main-body {
-    margin: 5px 10%;
+}
+
+@media screen and (max-width: 480px) and (max-height: 900px) {
+  .doted-lines .line-1 {
+    width: 136.05px;
+    height: 117.32px;
+    left: 36.89px;
+    top: 22px;
+  }
+  .doted-lines .line-2 {
+    width: 35.85px;
+    height: 75.23px;
+    left: 10px;
+    top: 68.74px;
+  }
+  .header {
+    margin: 10px 10px 0 20px;
+    align-items: flex-end;
+  }
+  .header-logo {
+    width: 25.78px;
+    height: 18.8px;
+  }
+  .header .header-toggle-button {
+    margin-top: 0;
+  }
+  .header-toggle-button img {
+    width: 11.74px;
+    height: 7.22px;
+  }
+  .header-navigations-sub {
+    display: none;
+  }
+  .display-picture .cat-image {
+    width: 164px;
+    height: 156px;
+  }
+  .display-picture .white-bg {
+    width: 119px;
+    height: 111px;
   }
   .display-picture p {
-    font-size: 1.2rem;
-    margin: 0;
+    font-size: 19.0878px;
+    line-height: 29px;
+    width: 100%;
+    top: 32%;
   }
-  .display-picture img {
-    width: 140px;
-    height: 130px;
-  }
-  .white-bg {
-    width: 110px;
-    height: 110px;
-    top: 140px;
-  }
-  .display-picture .dots-3 {
-    margin-top: 5px;
-  }
-  .dot {
-    width: 6px;
-    height: 7px;
+  .dots-3 .dot {
+    display: none;
   }
   .typing-field {
-    margin: 8% 10% 2% 10%;
-  }
-  .typing-field span {
-    font-size: 0.5rem;
+    width: 312.5px;
+    top: 38%;
   }
   .typing-field input {
-    height: 20px;
-    font-size: 0.5rem;
+    height: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7.29167px;
+    line-height: 12px;
   }
-  .price-field h1 {
-    font-size: 1.6rem;
-    margin-top: 20px;
+  .typing-field span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8.81398px;
+    line-height: 13px;
   }
-  .price-field p {
-    font-size: 0.5rem;
-  }
-  .display-code {
-    margin: 20px 20% 20px 20%;
+  .price-field {
+    flex-direction: column;
+    bottom: 8%;
     text-align: center;
   }
+  .price-field p {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 58px;
+    margin-bottom: -13px;
+    margin-top: 20px;
+  }
+
+  .display-code {
+    bottom: 11%;
+  }
   .display-code .code {
-    font-size: 0.3rem;
-    margin: 10px auto;
+    display: none;
   }
   .display-code a {
-    font-size: 0.4rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6.4px;
+    line-height: 10px;
   }
-
   .footer {
-    font-size: 0.4rem;
-    margin-top: 10px;
+    bottom: 0;
+    margin-bottom: 10px;
   }
-  .store-icons img {
-    width: 70px;
-    height: 25px;
-  }
-  .watch-video-section i {
-    font-size: 30px;
+  .volcano-logo-section {
+    margin-left: 20px;
   }
   .volcano-logo-section img {
-    width: 25px;
+    width: 26.08px;
+    height: 27.16px;
   }
-
-  .toggle-line {
-    width: 20px;
-    height: 3px;
-    margin: 1.5px 0;
+  .volcano-logo-section p {
+    display: none;
+  }
+  .app-store-section {
+    margin-left: -10px;
+  }
+  .app-store-section p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7.63866px;
+    line-height: 13px;
+  }
+  .store-icons img {
+    width: 66px;
+    height: 24px;
+  }
+  .watch-video-section {
+    margin-right: 15px;
+  }
+  .watch-video-section img {
+    width: 20.02px;
+    height: 20.02px;
+  }
+  .watch-video-section p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.13626px;
+    line-height: 5px;
+    margin-top: -5px;
   }
 }
-@media only screen and (max-width: 320px) {
+
+@media screen and (max-width: 480px) and (max-height: 800px) {
+  .doted-lines .line-1 {
+    width: 136.05px;
+    height: 117.32px;
+    left: 36.89px;
+    top: 22px;
+  }
+  .doted-lines .line-2 {
+    width: 35.85px;
+    height: 75.23px;
+    left: 10px;
+    top: 68.74px;
+  }
   .header {
-    height: 50px;
-    align-items: center;
+    margin: 10px 10px 0 20px;
+    align-items: flex-end;
   }
   .header-logo {
-    width: 35px;
+    width: 25.78px;
+    height: 18.8px;
   }
-
-  .header-navigations {
-    font-size: 0.7rem;
+  .header .header-toggle-button {
+    margin-top: 0;
   }
-  .main-body {
-    margin: 3px 10%;
+  .header-toggle-button img {
+    width: 11.74px;
+    height: 7.22px;
+  }
+  .header-navigations-sub {
+    display: none;
+  }
+  .display-picture .cat-image {
+    width: 164px;
+    height: 156px;
+  }
+  .display-picture .white-bg {
+    width: 119px;
+    height: 111px;
   }
   .display-picture p {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 19.0878px;
+    line-height: 29px;
+    width: 100%;
+    top: 32%;
   }
-  .display-picture img {
-    width: 100px;
-    height: 90px;
-  }
-  .white-bg {
-    width: 75px;
-    height: 75px;
-    top: 100px;
-  }
-
-  .dot {
-    width: 6px;
-    height: 5px;
+  .dots-3 .dot {
+    display: none;
   }
   .typing-field {
-    margin: 8% 12% 2% 12%;
-  }
-  .typing-field span {
-    font-size: 0.4rem;
+    width: 312.5px;
+    top: 38%;
   }
   .typing-field input {
-    font-size: 0.4rem;
+    height: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7.29167px;
+    line-height: 12px;
   }
-  .price-field h1 {
-    font-size: 1.4rem;
+  .typing-field span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8.81398px;
+    line-height: 13px;
+  }
+  .price-field {
+    flex-direction: column;
+    bottom: 5%;
+    text-align: center;
   }
   .price-field p {
-    font-size: 0.4rem;
+    font-weight: 300;
+    font-size: 38.5807px;
+    line-height: 58px;
+    margin-bottom: -15px;
+    margin-top: 15px;
   }
-
+  .display-code {
+    bottom: 11%;
+  }
   .display-code .code {
-    font-size: 0.35rem;
+    display: none;
   }
+  .display-code a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6.4px;
+    line-height: 10px;
+  }
+  .footer {
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+  .volcano-logo-section {
+    margin-left: 20px;
+  }
+  .volcano-logo-section img {
+    width: 26.08px;
+    height: 27.16px;
+  }
+  .volcano-logo-section p {
+    display: none;
+  }
+  .app-store-section {
+    margin-left: -10px;
+  }
+  .app-store-section p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7.63866px;
+    line-height: 13px;
+  }
+  .store-icons img {
+    width: 66px;
+    height: 24px;
+  }
+  .watch-video-section {
+    margin-right: 15px;
+  }
+  .watch-video-section img {
+    width: 20.02px;
+    height: 20.02px;
+  }
+  .watch-video-section p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.13626px;
+    line-height: 5px;
+    margin-top: -5px;
+  }
+}
 
-  .toggle-line {
-    width: 15px;
-    height: 2.5px;
-    margin: 1.5px 0;
+@media screen and (max-width: 480px) and (max-height: 700px) {
+  .price-field {
+    bottom: 1%;
   }
-} */
+}
+
+@media screen and (max-width: 320px) {
+  .display-picture .cat-image {
+    width: 144px;
+    height: 146px;
+  }
+  .display-picture .white-bg {
+    width: 99px;
+    height: 91px;
+  }
+  .display-picture p {
+    font-size: 16px;
+  }
+  .typing-field {
+    width: 80%;
+  }
+  .typing-field input {
+    height: 25px;
+  }
+  .price-field {
+    bottom: -3%;
+  }
+  .price-field p {
+    font-size: 30px;
+  }
+}
