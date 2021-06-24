@@ -12,7 +12,23 @@ body {
   background-attachment: fixed;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  opacity: 0.95;
+  /* font-size: 16px; */
+}
+
+.doted-lines .line-1 {
+  position: absolute;
+  width: 425px;
+  height: 366.5px;
+  left: 80px;
+  top: -54px;
+}
+.doted-lines .line-2 {
+  position: absolute;
+  width: 112px;
+  height: 235px;
+  left: -25px;
+  top: 92px;
 }
 
 .header {
@@ -44,11 +60,11 @@ body {
 }
 
 .header-navigations-sub {
-  padding: 0 10px;
+  padding: 0 50px;
 }
 
 .header-navigations-sub a {
-  padding: 0 10px;
+  padding: 0 30px;
   text-decoration: none;
   color: white;
 }
@@ -62,39 +78,49 @@ body {
 }
 
 .display-picture .cat-image {
-  position: relative;
-  transform: translate(5%);
+  position: absolute;
   width: 301px;
   height: 204px;
   z-index: 5;
+  left: 50%;
+  top: 20%;
+  transform: translate(-45%, -50%);
 }
 .display-picture .white-bg {
   position: absolute;
   width: 209px;
-  height: 194px;
+  height: 200px;
+
   left: 50%;
-  top: 192px;
-
+  top: 20%;
   transform: translate(-50%, -50%);
-
-  /* box-shadow: inset -37.4492px 22.8857px 62.4154px #ffffff,
-    inset 16.6441px -31.2077px 62.4154px rgba(0, 0, 0, 0.2); */
   z-index: -1;
 }
 .display-picture p {
-  font-size: 2.6rem;
+  font-size: 43.01px;
   color: white;
   margin: 0;
+  line-height: 64px;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 60%;
 }
 .display-picture span {
   color: #ff9142;
-  font-weight: 600;
+  font-weight: 700;
 }
 .display-picture .dots-3 {
   display: flex;
 
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 .dot {
   width: 12px;
@@ -110,117 +136,242 @@ body {
   border: 0.8px solid rgba(255, 255, 255, 0.49);
 }
 .typing-field {
-  margin: 2% 20% 2% 20%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 41%;
 }
 .typing-field input {
-  /* width: 100%;
-  height: 25px; */
-  width: 600px;
+  width: 100%;
   height: 48px;
   border-radius: 30px;
   font-weight: 500;
   position: relative;
-  border-color: black;
+  border: 1px solid #0355d6;
   outline: none;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .typing-field span {
   color: #ff9142;
   position: absolute;
-  padding-right: 10px;
+  padding-right: 20px;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 16.92px;
   cursor: pointer;
   font-weight: 600;
+  line-height: 25.38px;
 }
 
 /* price */
 
 .price-field {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
-  font-weight: 600;
+  font-weight: 300;
+
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translate(-50%, -50%);
+  width: 60%;
 }
 
-.price-field h1 {
+.price-field p {
   color: #0355d6;
-  font-size: 2.2rem;
+  font-size: 59.94px;
   margin: 0;
 }
-.price-field p {
+.price-field small {
   color: white;
-  font-size: 0.7rem;
+  font-size: 18px;
   margin-top: 0;
 }
 
 /* code */
 
 .display-code {
-  margin: 0px 20% 20px 20%;
   text-align: center;
+  position: absolute;
+  bottom: 12%;
+  left: 51%;
+  transform: translate(-50%, -50%);
 }
 .display-code .code {
   width: fit-content;
   height: fit-content;
-  background-color: black;
+  background-color: #44555d;
   color: white;
   text-align: left;
   font-size: 0.6rem;
-  border-radius: 20px;
+  border-radius: 12px;
   margin: 5px auto 15px auto;
   padding: 10px;
 }
 .display-code a {
   text-decoration: none;
   border: 1px solid #0355d6;
-  border-radius: 20px;
-  background-color: #0355d6;
+  background: #0355d6;
+  border-radius: 27.2661px;
   color: #fff;
-  padding: 1% 4%;
-  font-size: 0.7rem;
+  padding: 2px 5px;
+  width: 97px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 10.14px;
+  line-height: 15.22px;
 }
 /* footer */
 
 .footer {
-  padding: 10px 4% 0 4%;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+
   display: flex;
+  flex-direction: row;
   font-size: 0.8rem;
   justify-content: space-between;
   align-items: flex-end;
   color: white;
 }
 
-.volcano-logo-section img {
-  width: 40px;
-  height: auto;
-  margin-bottom: 0;
+.volcano-logo-section {
+  margin-left: 41px;
 }
 
-.watch-video-section i {
-  color: white;
-  font-size: 60px;
+.volcano-logo-section img {
+  width: 49.94px;
+  height: 52px;
+  margin-bottom: 0;
 }
+.volcano-logo-section p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
 .watch-video-section {
+  margin-right: 30px;
+}
+.watch-video-section img {
+  width: 73px;
+  height: 88px;
+}
+.watch-video-section p {
   text-align: center;
+  font-size: 17.92px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-top: -10px;
 }
 
 .app-store-section {
-  margin-left: -6%;
   text-align: center;
+  margin-left: -1%;
+}
+.app-store-section p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 .store-icons img {
-  width: 110px;
-  height: 40px;
-  padding: 5px;
+  width: 136px;
+  height: 52px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-height: 900px) {
+  .doted-lines .line-1 {
+    width: 450px;
+    height: 360px;
+    left: 110px;
+    top: -114px;
+  }
+  .header-logo {
+    width: 60px;
+    height: 40px;
+  }
+  .header-toggle-button {
+    width: 30px;
+    height: 18px;
+    margin-top: -5px;
+  }
+  .header-navigations {
+    font-size: 15px;
+  }
+
+  .display-picture .cat-image {
+    width: 200px;
+    height: 140px;
+  }
+  .display-picture .white-bg {
+    width: 150px;
+    height: 130px;
+  }
+  .display-picture p {
+    font-size: 36px;
+  }
+  .dot {
+    width: 7px;
+    height: 8px;
+    margin-top: -1%;
+  }
+
+  .typing-field input {
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+  }
+  .typing-field span {
+    font-size: 16px;
+  }
+
+  .price-field p {
+    font-size: 48px;
+    margin: 2% 0 -8% 0;
+  }
+  .price-field small {
+    font-size: 16px;
+  }
+  .display-code {
+    margin-top: 25px;
+  }
+  .display-code .code {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .volcano-logo-section img {
+    width: 45px;
+  }
+  .watch-video-section img {
+    width: 70px;
+    height: 80px;
+  }
+  .watch-video-section p {
+    font-size: 14px;
+  }
+  .app-store-section {
+    margin-left: -1%;
+    text-align: center;
+  }
+
+  .store-icons img {
+    width: 136px;
+    height: 52px;
+  }
+}
+
+/* @media only screen and (max-width: 1200px) {
   .typing-field {
     margin: 2% 25% 2% 25%;
   }
@@ -249,10 +400,7 @@ body {
   .display-picture p {
     font-size: 2.8rem;
   }
-  /* .display-picture image {
-    width: 210px;
-    height: 200px;
-  } */
+
   .white-bg {
     width: 150px;
     height: 140px;
@@ -357,9 +505,7 @@ body {
     font-size: 0.8rem;
     margin-top: 50px;
   }
-  /* .store-icons i {
-    font-size: 50px;
-  } */
+
   .watch-video-section i {
     font-size: 60px;
   }
@@ -649,4 +795,4 @@ body {
     height: 2.5px;
     margin: 1.5px 0;
   }
-}
+} */
