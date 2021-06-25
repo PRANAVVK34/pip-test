@@ -870,11 +870,16 @@ body {
   .display-code .code {
     display: none;
   }
-  .display-code a {
+  .display-code a span {
+    display: none;
+  }
+  .display-code a::after {
+    content: "copy script";
     font-style: normal;
     font-weight: bold;
     font-size: 6.4px;
     line-height: 10px;
+    color: #fff;
   }
   .footer {
     bottom: 0;
@@ -1004,11 +1009,16 @@ body {
   .display-code .code {
     display: none;
   }
-  .display-code a {
+  .display-code a span {
+    display: none;
+  }
+  .display-code a::after {
+    content: "copy script";
     font-style: normal;
     font-weight: bold;
     font-size: 6.4px;
     line-height: 10px;
+    color: #fff;
   }
   .footer {
     bottom: 0;
