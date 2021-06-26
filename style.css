@@ -68,6 +68,10 @@ body {
   padding: 0 30px;
   text-decoration: none;
   color: white;
+  filter: brightness(85%);
+}
+.header-navigations-sub a:hover {
+  filter: brightness(100%);
 }
 /* main body */
 
@@ -169,6 +173,9 @@ body {
   font-weight: 600;
   line-height: 25.38px;
 }
+.typing-field span:hover {
+  filter: contrast(80%);
+}
 
 /* price */
 
@@ -230,6 +237,10 @@ body {
   font-size: 10.14px;
   line-height: 15.22px;
 }
+.display-code a:hover {
+  background-color: #0446af;
+}
+
 /* footer */
 
 .footer {
@@ -254,6 +265,9 @@ body {
   height: 52px;
   margin-bottom: 0;
 }
+.volcano-logo-section img:hover {
+  filter: contrast(85%);
+}
 .volcano-logo-section p {
   margin: 0;
   font-size: 12px;
@@ -267,6 +281,9 @@ body {
 .watch-video-section img {
   width: 73px;
   height: 88px;
+}
+.watch-video-section img:hover {
+  filter: contrast(85%);
 }
 .watch-video-section p {
   text-align: center;
