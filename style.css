@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url("./assets/bg-image.svg"),
+  background: url("./assets/bg-cloud.png"),
     linear-gradient(192.05deg, #385d85 0%, #4a91ff 100%);
 
   background-size: cover;
@@ -49,7 +49,9 @@ body {
   height: 22px;
   cursor: pointer;
 }
-
+.header-toggle-button:hover {
+  filter: contrast(85%);
+}
 .header-navigations {
   display: flex;
   padding: 0;
@@ -306,6 +308,11 @@ body {
 .store-icons img {
   width: 136px;
   height: 52px;
+}
+.store-icons img:hover {
+  cursor: pointer;
+
+  transform: translateY(-2px);
 }
 
 @media only screen and (max-height: 900px) {
