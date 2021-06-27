@@ -17,6 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- slider -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      rel="stylesheet"
+    />
     <!-- external stylesheet -->
     <link rel="stylesheet" href="/style.css" />
     <title>pip</title>
@@ -53,11 +62,10 @@
       <div class="display-picture">
         <img src="./assets/cat.svg" alt="display picture" class="cat-image" />
         <img src="./assets/Cloud.svg" class="white-bg" />
-        <p>Make your support human & <span>LIVE</span>!</p>
-        <div class="dots-3">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+        <div class="slider">
+          <p>Make your support human & <span>LIVE</span>!</p>
+          <p>Share your thoughts human & <span>LIVE</span>!</p>
+          <p>Keep your smile human & <span>LIVE</span>!</p>
         </div>
       </div>
 
@@ -93,7 +101,9 @@
           src="https://volcano.live/pip"&gt;&lt;/script&gt;&lt;iframe<br />
           src="https://volcano.live/pipframe" frameBorder="none"/&gt;
         </div>
-        <a href="#" class="copy-code"><span>Copy & Go Live</span></a>
+        <a href="#" class="copy-code"
+          ><span class="copy-text">Copy & Go Live</span></a
+        >
       </div>
     </section>
 
@@ -122,5 +132,26 @@
         <p>WATCH</p>
       </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                dots: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>

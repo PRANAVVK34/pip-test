@@ -14,7 +14,6 @@ body {
   overflow: hidden;
   font-family: "Poppins", sans-serif;
   opacity: 0.95;
-  /* font-size: 16px; */
 }
 
 .doted-lines .line-1 {
@@ -103,45 +102,42 @@ body {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-.display-picture p {
-  font-size: 43.01px;
+
+.slider {
   color: white;
+  height: 100px;
   margin: 0;
-  line-height: 64px;
-  font-weight: 300;
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 32%;
   transform: translate(-50%, -50%);
   width: 60%;
+  font-weight: 300;
 }
+.slick-dots li {
+  width: 8px;
+}
+.slick-dots li button {
+  color: #9cd0fa;
+}
+.slick-dots li button:before {
+  color: rgba(39, 101, 135, 0.6);
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #9cd0fa;
+  font-size: 10px;
+}
+.display-picture p {
+  font-size: 40px;
+}
+
 .display-picture span {
   color: #ff9142;
   font-weight: 700;
 }
-.display-picture .dots-3 {
-  display: flex;
 
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-}
-.dot {
-  width: 12px;
-  height: 13px;
-  background: rgba(39, 101, 135, 0.6);
-  border: 0.8px solid rgba(255, 255, 255, 0.49);
-  box-sizing: border-box;
-  border-radius: 50%;
-  margin: 0 2px;
-}
-.dot:first-child {
-  background: #9cd0fa;
-  border: 0.8px solid rgba(255, 255, 255, 0.49);
-}
 .typing-field {
   display: flex;
   justify-content: flex-end;
@@ -231,7 +227,7 @@ body {
   border: 1px solid #0355d6;
   background: #0355d6;
   border-radius: 27.2661px;
-  color: #fff;
+  color: white;
   padding: 2px 5px;
   width: 97px;
   height: 24px;
@@ -343,13 +339,12 @@ body {
     width: 150px;
     height: 130px;
   }
+
   .display-picture p {
     font-size: 40px;
   }
-  .dot {
-    width: 7px;
-    height: 8px;
-    margin-top: -1%;
+  .slider {
+    top: 30%;
   }
 
   .typing-field {
@@ -369,8 +364,6 @@ body {
 
   .price-field p {
     font-size: 48px;
-
-    /* margin: 2% 0 -8% 0; */
   }
   .price-field small {
     font-size: 16px;
@@ -408,6 +401,10 @@ body {
   .display-picture p {
     width: 70%;
     font-size: 35px;
+  }
+  .slider {
+    width: 80%;
+    height: 80px;
   }
   .typing-field {
     width: 50%;
@@ -458,6 +455,10 @@ body {
   .display-picture .white-bg {
     width: 350px;
     height: 310px;
+  }
+  .slider {
+    top: 34%;
+    height: 120px;
   }
   .typing-field {
     width: 65%;
@@ -545,9 +546,11 @@ body {
     width: 80%;
     top: 35%;
   }
-  .dots-3 .dot {
-    display: none;
+  .slider {
+    top: 36%;
+    height: 100px;
   }
+
   .typing-field {
     width: 486px;
   }
@@ -588,6 +591,9 @@ body {
     font-size: 26px;
     bottom: 6px;
   }
+  .app-store-section {
+    margin-left: 0;
+  }
   .app-store-section p {
     opacity: 0.7;
     font-weight: normal;
@@ -623,7 +629,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-height: 1023px) {
   .doted-lines .line-1 {
     width: 400px;
     height: 300px;
@@ -665,6 +671,10 @@ body {
     font-size: 26px;
     width: 80%;
     top: 35%;
+  }
+  .slider {
+    top: 34%;
+    height: 65px;
   }
 
   .typing-field {
@@ -754,6 +764,10 @@ body {
   }
   .display-picture p {
     font-size: 22px;
+  }
+  .slider {
+    top: 34%;
+    height: 60px;
   }
   .typing-field {
     width: 65%;
@@ -854,9 +868,12 @@ body {
     width: 100%;
     top: 32%;
   }
-  .dots-3 .dot {
-    display: none;
+  .slider {
+    top: 31%;
+    height: 70px;
+    width: 100%;
   }
+
   .typing-field {
     width: 312.5px;
     top: 38%;
@@ -994,9 +1011,7 @@ body {
     width: 100%;
     top: 32%;
   }
-  .dots-3 .dot {
-    display: none;
-  }
+
   .typing-field {
     width: 312.5px;
     top: 38%;
