@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- icons -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -127,10 +121,26 @@
       </div>
       <div class="watch-video-section">
         <a href="#">
-          <img src="./assets//video-icon.svg" alt="video player"
+          <img
+            src="./assets//video-icon.svg"
+            alt="video player"
+            class="start-video"
         /></a>
         <p>WATCH</p>
       </div>
+    </section>
+
+    <section class="play-video">
+      <p class="close-player">X</p>
+      <iframe
+        width="150%"
+        height="140%"
+        src="https://www.youtube.com/embed/tcNROadLjxQ?modestbranding=1&showinfo=0&controls=0&rel=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+        allowfullscreen
+      ></iframe>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -150,6 +160,13 @@
               },
             },
           ],
+        });
+        $(".play-video").hide();
+        $(".close-player").click(function () {
+          $(".play-video").hide();
+        });
+        $(".start-video").click(function () {
+          $(".play-video").show();
         });
       });
     </script>
