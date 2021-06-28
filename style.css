@@ -42,6 +42,7 @@ body {
 .header-logo {
   width: 61px;
   height: 45px;
+  z-index: 101;
 }
 .header-toggle-button {
   width: 36px;
@@ -256,6 +257,7 @@ body {
 
 .volcano-logo-section {
   margin-left: 41px;
+  z-index: 101;
 }
 
 .volcano-logo-section img {
@@ -263,6 +265,7 @@ body {
   height: 52px;
   margin-bottom: 0;
 }
+
 .volcano-logo-section img:hover {
   filter: contrast(85%);
 }
@@ -322,7 +325,7 @@ body {
 .play-video p {
   position: absolute;
   right: -18%;
-  top: 130px;
+  top: 20%;
   color: white;
   opacity: 0.85;
   cursor: pointer;
@@ -642,6 +645,10 @@ body {
     font-family: Roboto;
     line-height: 9px;
     margin-top: -15px;
+  }
+  .play-video p {
+    right: -15%;
+    top: 19%;
   }
 }
 
@@ -986,6 +993,21 @@ body {
     line-height: 5px;
     margin-top: -5px;
   }
+
+  .play-video {
+    left: -20px;
+    top: -70px;
+  }
+  .play-video p {
+    right: 1%;
+    top: 7%;
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 110%;
+    height: 115%;
+  }
 }
 
 @media screen and (max-width: 480px) and (max-height: 800px) {
@@ -1123,11 +1145,29 @@ body {
     line-height: 5px;
     margin-top: -5px;
   }
+  .play-video p {
+    right: 1%;
+    top: 6%;
+    font-size: 20px;
+  }
+  .play-video {
+    left: -20px;
+    top: -55px;
+  }
 }
 
 @media screen and (max-width: 480px) and (max-height: 700px) {
   .price-field {
     bottom: 1%;
+  }
+  .play-video {
+    left: -20px;
+    top: -55px;
+  }
+  .play-video p {
+    right: 1%;
+    top: 7%;
+    font-size: 20px;
   }
 }
 
