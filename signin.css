@@ -1,0 +1,21 @@
+.center-align-form {
+  top: 50%;
+}
+.form .phone {
+  text-align: left;
+}
+.dots img {
+  top: 26%;
+}
+.otp-session p {
+  margin: 40px 0;
+}
+@media screen and (max-width: 480px) {
+  .main-box {
+    width: 103%;
+    height: 103%;
+  }
+  .dots img {
+    top: 22%;
+  }
+}

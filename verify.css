@@ -1,0 +1,47 @@
+.main-box {
+  height: 70%;
+  width: 30%;
+}
+.center-align-form {
+  top: 50%;
+}
+.cat-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cat-image img {
+  width: 172px;
+  height: 117px;
+}
+.cat-image p {
+  margin: 0;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27.2641px;
+  line-height: 36px;
+
+  color: rgba(0, 0, 0, 0.85);
+}
+
+@media screen and (max-width: 1200px) {
+  .main-box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-box {
+    height: 70%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-box {
+    height: 100%;
+    width: 100%;
+  }
+  .cat-image p {
+    font-size: 20px;
+  }
+}

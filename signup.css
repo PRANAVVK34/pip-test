@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url("./assets/bg-image.svg"),
+  background: url("./assets/bg-cloud.png"),
     linear-gradient(192.05deg, #385d85 0%, #4a91ff 100%);
 
   background-size: cover;
