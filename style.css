@@ -282,6 +282,7 @@ body {
 .watch-video-section img {
   width: 73px;
   height: 88px;
+  z-index: 101;
 }
 .watch-video-section img:hover {
   filter: contrast(85%);
